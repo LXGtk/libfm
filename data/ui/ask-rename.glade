@@ -1,30 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.40.0 -->
 <interface>
-  <requires lib="gtk+" version="2.18"/>
-  <!-- interface-naming-policy toplevel-contextual -->
+  <requires lib="gtk+" version="3.0"/>
   <object class="GtkDialog" id="dlg">
-    <property name="can_focus">False</property>
-    <property name="border_width">10</property>
+    <property name="can-focus">False</property>
+    <property name="border-width">10</property>
     <property name="title" translatable="yes">Confirm File Replacing</property>
-    <property name="type_hint">normal</property>
+    <property name="type-hint">normal</property>
     <child internal-child="vbox">
-      <object class="GtkVBox" id="dialog-vbox">
+      <object class="GtkBox" id="dialog-vbox">
         <property name="visible">True</property>
-        <property name="can_focus">False</property>
+        <property name="can-focus">False</property>
+        <property name="orientation">vertical</property>
         <property name="spacing">6</property>
         <child internal-child="action_area">
-          <object class="GtkHButtonBox" id="dialog-action_area">
+          <object class="GtkButtonBox" id="dialog-action_area">
             <property name="visible">True</property>
-            <property name="can_focus">False</property>
-            <property name="layout_style">end</property>
+            <property name="can-focus">False</property>
+            <property name="layout-style">end</property>
             <child>
               <object class="GtkButton" id="cancel">
                 <property name="label">gtk-cancel</property>
+                <property name="use-action-appearance">False</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
-                <property name="use_action_appearance">False</property>
-                <property name="use_stock">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="use-stock">True</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -35,13 +36,13 @@
             <child>
               <object class="GtkButton" id="skip">
                 <property name="label" translatable="yes">_Skip</property>
+                <property name="use-action-appearance">False</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="can_default">True</property>
-                <property name="has_default">True</property>
-                <property name="receives_default">True</property>
-                <property name="use_action_appearance">False</property>
-                <property name="use_underline">True</property>
+                <property name="can-focus">True</property>
+                <property name="can-default">True</property>
+                <property name="has-default">True</property>
+                <property name="receives-default">True</property>
+                <property name="use-underline">True</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -52,13 +53,13 @@
             <child>
               <object class="GtkButton" id="rename">
                 <property name="label" translatable="yes">_Rename</property>
+                <property name="use-action-appearance">False</property>
                 <property name="visible">True</property>
                 <property name="sensitive">False</property>
-                <property name="can_focus">True</property>
-                <property name="can_default">True</property>
-                <property name="receives_default">True</property>
-                <property name="use_action_appearance">False</property>
-                <property name="use_underline">True</property>
+                <property name="can-focus">True</property>
+                <property name="can-default">True</property>
+                <property name="receives-default">True</property>
+                <property name="use-underline">True</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -69,11 +70,11 @@
             <child>
               <object class="GtkButton" id="overwrite">
                 <property name="label" translatable="yes">_Overwrite</property>
+                <property name="use-action-appearance">False</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
-                <property name="use_action_appearance">False</property>
-                <property name="use_underline">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="use-underline">True</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -85,22 +86,22 @@
           <packing>
             <property name="expand">False</property>
             <property name="fill">True</property>
-            <property name="pack_type">end</property>
+            <property name="pack-type">end</property>
             <property name="position">0</property>
           </packing>
         </child>
         <child>
           <object class="GtkHBox" id="hbox">
             <property name="visible">True</property>
-            <property name="can_focus">False</property>
+            <property name="can-focus">False</property>
             <property name="spacing">12</property>
             <child>
               <object class="GtkImage" id="image1">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <property name="yalign">0</property>
                 <property name="stock">gtk-dialog-question</property>
-                <property name="icon-size">6</property>
+                <property name="icon_size">6</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -111,17 +112,17 @@
             <child>
               <object class="GtkVBox" id="vbox1">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <property name="spacing">6</property>
                 <child>
                   <object class="GtkLabel" id="label1">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="xalign">0</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">&lt;b&gt;There is already a file with the same name in this location.&lt;/b&gt;
 
 Do you want to replace the existing file</property>
-                    <property name="use_markup">True</property>
+                    <property name="use-markup">True</property>
+                    <property name="xalign">0</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -132,14 +133,14 @@ Do you want to replace the existing file</property>
                 <child>
                   <object class="GtkHBox" id="hbox2">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="spacing">12</property>
                     <child>
                       <object class="GtkImage" id="dest_icon">
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="stock">gtk-missing-image</property>
-                        <property name="icon-size">6</property>
+                        <property name="icon_size">6</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -150,7 +151,7 @@ Do you want to replace the existing file</property>
                     <child>
                       <object class="GtkLabel" id="dest_fi">
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="xalign">0</property>
                       </object>
                       <packing>
@@ -169,9 +170,9 @@ Do you want to replace the existing file</property>
                 <child>
                   <object class="GtkLabel" id="label2">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="xalign">0</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">with the following file?</property>
+                    <property name="xalign">0</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -182,14 +183,14 @@ Do you want to replace the existing file</property>
                 <child>
                   <object class="GtkHBox" id="hbox3">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="spacing">12</property>
                     <child>
                       <object class="GtkImage" id="src_icon">
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="stock">gtk-missing-image</property>
-                        <property name="icon-size">6</property>
+                        <property name="icon_size">6</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -200,7 +201,7 @@ Do you want to replace the existing file</property>
                     <child>
                       <object class="GtkLabel" id="src_fi">
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="xalign">0</property>
                       </object>
                       <packing>
@@ -219,16 +220,16 @@ Do you want to replace the existing file</property>
                 <child>
                   <object class="GtkHBox" id="hbox4">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="spacing">12</property>
                     <child>
                       <object class="GtkLabel" id="label3">
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="xalign">0</property>
+                        <property name="can-focus">False</property>
                         <property name="label" translatable="yes">_File name:</property>
-                        <property name="use_underline">True</property>
-                        <property name="mnemonic_widget">filename</property>
+                        <property name="use-underline">True</property>
+                        <property name="mnemonic-widget">filename</property>
+                        <property name="xalign">0</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -239,13 +240,11 @@ Do you want to replace the existing file</property>
                     <child>
                       <object class="GtkEntry" id="filename">
                         <property name="visible">True</property>
-                        <property name="can_focus">True</property>
-                        <property name="invisible_char">•</property>
-                        <property name="activates_default">True</property>
-                        <property name="primary_icon_activatable">False</property>
-                        <property name="secondary_icon_activatable">False</property>
-                        <property name="primary_icon_sensitive">True</property>
-                        <property name="secondary_icon_sensitive">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="invisible-char">•</property>
+                        <property name="activates-default">True</property>
+                        <property name="primary-icon-activatable">False</property>
+                        <property name="secondary-icon-activatable">False</property>
                       </object>
                       <packing>
                         <property name="expand">True</property>
@@ -277,12 +276,12 @@ Do you want to replace the existing file</property>
         <child>
           <object class="GtkCheckButton" id="apply_all">
             <property name="label" translatable="yes">_Apply this option to all existing files</property>
+            <property name="use-action-appearance">False</property>
             <property name="visible">True</property>
-            <property name="can_focus">True</property>
-            <property name="receives_default">False</property>
-            <property name="use_action_appearance">False</property>
-            <property name="use_underline">True</property>
-            <property name="draw_indicator">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">False</property>
+            <property name="use-underline">True</property>
+            <property name="draw-indicator">True</property>
           </object>
           <packing>
             <property name="expand">False</property>
