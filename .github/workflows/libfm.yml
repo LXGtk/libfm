@@ -22,7 +22,10 @@ jobs:
     - name: configure
       run: |
           autoreconf -fvi
-          ./configure
+          ./configure \
+              --enable-debug \
+              --enable-udisks \
+              --enable-demo
     - name: make
       run: make
     - name: check
