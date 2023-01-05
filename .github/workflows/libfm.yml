@@ -24,8 +24,7 @@ jobs:
           autoreconf -fvi
           ./configure \
               --enable-debug \
-              --enable-udisks \
-              --enable-demo
+              --enable-udisks 
     - name: make
       run: make
     - name: check
