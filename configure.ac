@@ -89,11 +89,11 @@ IT_PROG_INTLTOOL([0.40.0])
 dnl libgtk version
 AC_ARG_WITH(gtk,
     [AC_HELP_STRING([--with-gtk=VER],
-        [choose Gtk+ version for libfm-gtk build (default=2)])
+        [choose Gtk+ version for libfm-gtk build (default=3)])
 AC_HELP_STRING([--without-gtk],
         [disable libfm-gtk build])],
     [ac_with_gtk="${withval}"],
-    [ac_with_gtk=2]
+    [ac_with_gtk=3]
 )
 AM_COND_IF(EXTRALIB_ONLY,
     [ac_with_gtk=no])
@@ -112,13 +112,13 @@ AC_SUBST(GIO_LIBS)
 
 if test x"$ac_with_gtk" != xno; then
   case "$ac_with_gtk" in
-    3|3.*)
+    *)
       pkg_modules="$gio_modules gtk+-3.0 pango >= 1.16.0 cairo >= 1.8.0"
       LIBFM_GTK_LTLIBRARIES=libfm-gtk3.la
       LIBFM_GTK_PC=libfm-gtk3.pc
       ac_with_gtk="3.0"
       ;;
-    *)
+    2|2.*)
       pkg_modules="$gio_modules gtk+-2.0 >= 2.18.0 pango >= 1.16.0 cairo >= 1.8.0"
       LIBFM_GTK_LTLIBRARIES=libfm-gtk.la
       LIBFM_GTK_PC=libfm-gtk.pc
