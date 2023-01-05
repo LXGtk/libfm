@@ -25,3 +25,7 @@ jobs:
           ./configure
     - name: make
       run: make
+    - name: check
+      run: make check
+    - name: install
+      run: make install
